@@ -1,8 +1,11 @@
-from workout import workout
+from workout import *
 
 def main():
-    myWRKT = workout("Chest and Back", 10, "today")
+    my_sets = [Set("Bench Press", 185, 7), Set("Bench Press",185,9)]
+    myWRKT = Workout("Chest and Back", my_sets, "today")
+    myWRKT.displayDetails()
     myWRKT.displayWorkout()
+
 
 if __name__ == '__main__':
     main()
